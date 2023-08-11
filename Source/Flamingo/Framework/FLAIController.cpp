@@ -28,6 +28,8 @@ void AFLAIController::MyMove()
 		MoveReq.SetUsePathfinding(true);
 		MoveReq.SetAcceptanceRadius(5.0f);
 		MoveReq.SetReachTestIncludesAgentRadius(false);
+		MoveReq.SetGoalActor(TargetActor);
+
 		MoveTo(MoveReq);
 	}
 }
